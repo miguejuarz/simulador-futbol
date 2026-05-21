@@ -69,3 +69,5 @@ print(simular_centro())
 
 print("\n--- JUGADA 2: BALÓN AL HUECO ---")
 print(simular_pase_al_hueco())
+
+# Proyecto: Simulador de Fútbol Fullstack - Miguel 2026
