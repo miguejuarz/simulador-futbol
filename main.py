@@ -1,4 +1,17 @@
+from fastapi import FastAPI
 import random
+
+# Creamos la aplicación
+app = FastAPI()
+
+# Ruta raíz para probar en el navegador
+@app.get("/")
+def inicio():
+    return {"mensaje": "¡Bienvenido al servidor del Simulador Táctico de Fútbol!"}
+@app.get("/simular-jugada")
+def obtener_jugada():
+    return simular_centro()
+
 defensor = {
     "nombre": "Miguel",
     "estatura": 80,          # Su alcance físico base
